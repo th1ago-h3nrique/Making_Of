@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------- */
+nav{
+    width: auto;
+    height: 70px;
+    background-color: lightpink;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #c38358 3px solid;
+}
+
+nav .img{
+    width: 50px;
+    height: 50px;
+    margin-left:20px;
+    margin-top: 10px;
+}
+
+
+/* --------------------- */
+
+#divBusca{
+    background-color:#c38358;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    height: 35px;
+    margin-top: 15px;
+    margin-right:70px ;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+  #btnBusca{
+    width: 30px;
+    height: 30px;
+  }
+
+
+/* --------------------- */
+
+
+.links{
+    margin-top: 20px;
+    justify-content: space-between;
+    
+
+}
+
+.links a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    margin-left: 100px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover{
+    color: red;
+    transition: 900ms;
+}
+
+/* --------------------------- */
