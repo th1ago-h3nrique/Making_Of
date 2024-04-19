@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+/* < ABAIXO É APRESENTADO OS CODIGOS DA NAVBAR > */
+
+
+.nav{
+    padding: 10px;
+    
+
+    display: flex;
+    background-color: #EFB1A2;
+
+    width: 100%;
+    height: 80px;
+
+    justify-content: space-between;
+
+
+    .img{
+        height: 60px;
+        width: auto;
+    }
+    .login_icon{
+        height: 60px;
+        width: auto;
+    }
+    .list {
+        font-size: 25px;
+        margin-top: 15px;
+       list-style:  none;
+    }
+
+    .list a{
+       
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .list a:hover{
+        transform: scale(1.05);
+        transition: 0.6s;
+        color: white;
+    }
+}
+
+.search-box{
+    margin-top: 5px;
+    
+    background-color: white;
+    border-radius: 40px;
+    height: 50px;
+ 
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-box:hover > .search-text{
+    width: 400px;
+    padding-left: 10px;
+}
+
+.search-box:hover > .search-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #EFB1A2;
+    border-radius: 50%;
+    
+    
+}
+
+.search-box:hover > .search-btn .lupa-on{
+    display: none;
+}
+
+.search-box:hover > .search-btn .lupa-press{
+    display: block;
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+
+    width: 0;
+    font-size: 16px;
+
+    transition: 0.5s;
+}
+
+.search-btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupa-on{
+    width: 30px;
+    height: 30px;
+}
+
+.lupa-press{
+    width: 30px;
+    height: 30px;
+
+    display: none;
+}
+
+
+/* FIM DA NAVBAR */
+
+
+/* ABAIXO É DEMONSTRADO OS CODIGOS DO BANNER PRINCIPAL */
+
+
+.banner{
+    max-width: 100%;
+    max-height: 700px;
+    background-image:  url("./img/fundo-banner-maquiagem.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    border-bottom: #EFB1A2 1px solid;
+
+    h1{
+        margin-top: 60px;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: #ff6961;
+        text-align: center;
+        letter-spacing: 5px;
+
+    }
+
+    p{
+        font-size: 25px;
+        font-family: Palatino, URW Palladio L, serif;
+    }
+}
+
+
+.box1{
+    max-width: 40%;
+    max-height: 700px;
+
+    margin: 50px;
+    
+    border-radius:20px;
+
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px white;
+    opacity: 0.8; 
+
+    position: relative;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2{
+    margin: 5%;
+    
+}
+
+.box3{
+    margin: 5%;
+}
+
+.gif{
+    width: 30%;
+    height: 30%;
+    margin-right: 50px;
+}
+
+/* FIM DO BANNER PRINCIPAL */
+
+body{
+    background-color: #ffe4e1;
+    background-image: url(#);
+    background-repeat: repeat;
+    background-size:contain;
+
+}
+
+/* ABAIXO DEMONSTRADO OS CÓDIGOS REFERENTES AO FORMULARIO DE LOGIN */
+
+
+.forms{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: ghostwhite;
+    opacity: 0.9;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 30px;
+    
+
+    
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    grid-area: span;
+    
+    box-shadow: 0px 0px 10px 0px white;
+    
+    
+
+
+    p{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        text-align: start;
+
+        margin-top: 5%;
+
+        a{ 
+        text-decoration: none;
+        color: #ff6961;
+        }
+        a:hover{
+            color: #ff6961;
+            text-decoration: underline;
+        }
+    }
+
+    .login-form{
+        width: 100%;
+        margin: 2%; 
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+
+        text-align: center;
+
+    }
+
+    .form-control{
+        width: 280px;
+        height: 35px;
+        margin: 5%;
+
+        border-radius: 40px;
+        background-color: snow;
+        padding-left: 10px;
+
+        
+
+        
+    }
+
+    .login-check input{
+        display: none;    
+    }
+
+    .login-check input + label::before{
+        content: " ";
+        width: 20px;
+        height: 20px;
+        
+       
+        border: 1px solid black;
+        border-radius: 8px;
+
+        background-color: white;
+
+        vertical-align: middle;
+        margin-right: 5px;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+
+    .login-check input:checked + label::before{
+
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: #EFB1A2;
+        background-position: center;
+        border: 1px solid black;
+        cursor: pointer;
+        
+    }
+}
+
+
+.btn-cadastrar{
+    width: 100px;
+    height: 30px;
+
+    margin-left: 140px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+    border: none;
+    background-color: #EFB1A2;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+
+}
+.btn-cadastrar:hover{
+    background-color: #F2948A;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #ff6961;
+}
+
+
+
+/* FIM DO FORMULARIO DE LOGIN */
+/* --------------------- */
+
+
+
+
+
+
